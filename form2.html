@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employment Application Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: green;
+            margin: 0;
+            padding: 0;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: goldenrod;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(205, 105, 134, 0.5);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            background-color: black;
+            color: lightskyblue;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color:skyblue;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        /* Optional: Add styles for checkboxes and radio buttons */
+        input[type="checkbox"],
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2 align="center">Contact Me</h2>
+        <div align="center"> <em><strong>I am offering huge range of jobs for freshers</strong></em></div>
+        <p align="center">Email: kusursiddaram@gmail.com</p>
+        <p align="center">Phone: 7483122655</p>
+    </div>
+    
+    <form name="employment" action="send.php" method="post">
+        <label for="date">Date:</label><br>
+        <input type="date" id="date" name="date" maxlength="50"><br>
+        
+        <label for="fname">First Name:</label><br>
+        <input type="text" id="fname" name="fname" maxlength="50"><br>
+        
+        <label for="lname">Last Name:</label><br>
+        <input type="text" id="lname" name="lname" maxlength="50"><br>
+        
+        <label for="position">Position:</label><br>
+        <select id="position" name="position">
+            <option value="AC">Software Developer</option>
+            <option value="RE">MERN/MEAN Full Stack Web Developer</option>
+            <option value="AD">Java Developer</option>
+            <option value="SU">React Developer</option>
+            <option value="trainee">Trainee</option>
+            <option value="wd">Web Designer Frontend</option>
+            <option value="seo">Search Engine Optimizer</option>
+            <option value="da">Database Administrator</option>
+            <option value="hd">Hadoop Developer</option>
+        </select><br>
+        
+        <label for="experience">Experience Level:</label><br>
+        <select id="experience" name="experience">
+            <option value="EL">Entry Level</option>
+            <option value="SE">Some Experience</option>
+            <option value="VE">Very Experience</option>
+        </select><br>
+        
+        <label for="jobtype">Job Type:</label><br>
+        <input type="checkbox" id="ft" name="ft">
+        <label for="ft">Full-time</label>
+        <input type="checkbox" id="pt" name="pt">
+        <label for="pt">Part-time</label>
+        <input type="checkbox" id="ct" name="ct">
+        <label for="ct">Contract</label><br>
+        
+        <label>Employment Status:</label><br>
+        <input type="radio" id="employed" name="estatus" value="employed">
+        <label for="employed">Employed</label>
+        <input type="radio" id="unemployed" name="estatus" value="unemployed">
+        <label for="unemployed">Unemployed</label>
+        <input type="radio" id="student" name="estatus" value="student">
+        <label for="student">Student</label><br>
+        
+        <label for="comments">Additional Comments:</label><br>
+        <textarea id="comments" name="comments" rows="5" cols="45"></textarea><br>
+        
+        <input type="submit" id="submit" name="submit" value="Submit">
+        <input type="reset" id="reset" name="reset" value="Reset">
+    </form>
+    
+</body>
+</html>

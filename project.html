@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS web page</title>
+<style>
+        body{
+            margin:0;
+            padding: 0;
+            line-height: 1.5rem;
+        }
+        #header{
+            background: black;
+            font-family: Arial, Helvetica, sans-serif;
+            height: 100px;
+        }
+        #contentwrapper{
+            float: left;
+            width: 100%;
+        }
+        #contentcolumn{
+            margin: 0 230px 0 230px ;
+        }
+        #leftcolumn{
+            float:left;
+            width: 230px;
+            margin-left: -100%;
+            background: #24c8ff;
+        }
+        #rightcolumn{
+            float: left;
+            width: 230px;
+            margin-left: -230px;
+            background: #fffb00;
+        }
+        #innertext{
+            margin: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #5e5e5e;
+        }
+        #footer{
+            clear: left; /* cant float to left */
+            width: 100%;
+            background: black;
+            color: #fff;
+            font-family: arial;
+            text-align: center;
+            padding: 4px;
+        }
+        /* navigation bar for css */
+        ul{
+            list-style-type: none;
+            margin:0;
+            padding:0;
+            background-color: #000;
+        }
+        li{
+            float: left;
+            border-right: 1px solid #bbb;
+        }
+        li:last-child{
+            border-right: none;
+        }
+        li a{
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        li a:hover:not(.active) {
+             background-color: #808080;
+        }
+        .active{
+            background-color: #0099ff;
+        }
+        /* responsive layout css */
+        @media(max-width:840px) {
+            #leftcolumn {
+                margin-left: -100%;
+            }
+            #rightcolumn {
+                float: none;
+                width: 100%;
+                clear: both;
+                margin-left: 0;
+            }
+            #contentcolumn {
+                margin-right: 0;
+            }
+        }
+
+        @media(max-width:600px) {
+            #leftcolumn{
+                float:none;
+                width:100%;
+                clear:both;
+                margin-left:0;
+            }
+            #contentcolumn{
+                margin-left: 0;
+            } 
+        }
+</style>
+</head>
+
+<body>
+   <div id="container">
+    <div id="header">
+        <ul style="display:inline;">
+            <li class="active"><a href="#home">Home</a></li>
+            <li class="active"><a href="#news">News</a></li>
+            <li class="active"><a href="#contact">Contact</a></li>
+            <li class="active"><a href="#about">About</a></li>
+        </ul>
+    </div>
+    <div id="contentwrapper">
+        <div id="contentcolumn">
+            <div class="innertext"> The term "IT industry" refers to the Information Technology industry. It encompasses a wide range of fields that involve the development, deployment, support, and management of computer systems, software, and information networks.Cloud Computing: Shifting from on-premise hardware and software to using computing resources delivered over the internet.
+                Artificial Intelligence (AI): Development of intelligent machines that can learn and automate tasks.
+                Big Data: Analyzing large datasets to extract insights and make data-driven decisions.
+                Internet of Things (IoT): Connecting everyday devices to the internet, allowing them to collect and share data.
+                Cybersecurity: Growing importance of protecting IT systems and data from cyber threats.
+                The IT industry plays a crucial role in the modern world, driving innovation and growth across various sectors. It offers a wide range of career opportunities for people with technical skills and interests.Cloud Computing: Shifting from on-premise hardware and software to using computing resources delivered over the internet.
+                Artificial Intelligence (AI): Development of intelligent machines that can learn and automate tasks.
+                Big Data: Analyzing large datasets to extract insights and make data-driven decisions.
+                Internet of Things (IoT): Connecting everyday devices to the internet, allowing them to collect and share data.
+                Cybersecurity: Growing importance of protecting IT systems and data from cyber threats.
+                The IT industry plays a crucial role in the modern world, driving innovation and growth across various sectors. It offers a wide range of career opportunities for people with technical skills and interests.</div>
+        </div>
+    </div>
+    <div id="leftcolumn">
+        <div class="innertext">Companies that provide communication infrastructure and services like internet access, mobile phone networks, and data centers. (e.g., Verizon, AT&T, T-Mobile)Cloud Computing: Shifting from on-premise hardware and software to using computing resources delivered over the internet.
+Artificial Intelligence (AI): Development of intelligent machines that can learn and automate tasks.
+Big Data: Analyzing large datasets to extract insights and make data-driven decisions.
+Internet of Things (IoT): Connecting everyday devices to the internet, allowing them to collect and share data.
+Cybersecurity: Growing importance of protecting IT systems and data from cyber threats.
+The IT industry plays a crucial role in the modern world, driving innovation and growth across various sectors. It offers a wide range of career opportunities for people with technical skills and interests.</div>
+    </div>
+    <div id="rightcolumn">
+        <div class="innertext">Cloud Computing: Shifting from on-premise hardware and software to using computing resources delivered over the internet. Artificial Intelligence (AI): Development of intelligent machines that can learn and automate tasks. Big Data: Analyzing large datasets to extract insights and make data-driven decisions. Internet of Things (IoT): Connecting everyday devices to the internet, allowing them to collect and share data. Cybersecurity: Growing importance of protecting IT systems and data from cyber threats. The IT industry plays a crucial role in the modern world, driving innovation and growth across various sectors. It offers a wide range of career opportunities for people with technical skills and interests.</div>
+    </div>
+    <div id="footer"></div>
+</div>
+</body>
+</html>
